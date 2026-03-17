@@ -1,4 +1,4 @@
-import { Award, Calendar } from 'lucide-react';
+import { Award, Calendar, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const CertificationCard = ({ cert, index }) => {
@@ -17,9 +17,21 @@ const CertificationCard = ({ cert, index }) => {
             <div className="flex-grow">
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white">{cert.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400">{cert.issuer}</p>
-                <div className="flex items-center gap-2 mt-2 text-sm text-gray-500 dark:text-gray-500">
-                    <Calendar size={14} />
-                    <span>{cert.date}</span>
+                <div className="flex items-center justify-between mt-2">
+                    <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-500">
+                        <Calendar size={14} />
+                        <span>{cert.date}</span>
+                    </div>
+                    {cert.link && cert.link !== '#' && (
+                        <a
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                        >
+                            View Certificate <ExternalLink size={14} />
+                        </a>
+                    )}
                 </div>
             </div>
         </motion.div>

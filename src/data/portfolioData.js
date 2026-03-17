@@ -117,26 +117,34 @@ export const projects = [
 export const certifications = [
   {
     id: 1,
-    title: "Certification Name 1",
-    issuer: "Issuing Organization",
+    title: "Software Engineer Certificate",
+    issuer: "HackerRank",
     date: "2024",
-    link: "#",
-    image: "https://placehold.co/100x100/2563eb/ffffff?text=C1"
+    link: "https://www.hackerrank.com/certificates/94d17e91dac7",
+    image: "https://placehold.co/100x100/2563eb/ffffff?text=HR"
   },
   {
     id: 2,
-    title: "Certification Name 2",
-    issuer: "Issuing Organization",
-    date: "2023",
-    link: "#",
-    image: "https://placehold.co/100x100/2563eb/ffffff?text=C2"
+    title: "Python (Basic) Certificate",
+    issuer: "HackerRank",
+    date: "2024",
+    link: "https://www.hackerrank.com/certificates/5a1a89d8fb21",
+    image: "https://placehold.co/100x100/2563eb/ffffff?text=HR"
   },
   {
     id: 3,
-    title: "Certification Name 3",
-    issuer: "Issuing Organization",
-    date: "2023",
-    link: "#",
-    image: "https://placehold.co/100x100/2563eb/ffffff?text=C3"
+    title: "Salesforce AI Associate Certification",
+    issuer: "Salesforce",
+    date: "2024",
+    link: "https://www.linkedin.com/posts/pranav-peddinti-87b6a1330_salesforce-ai-associate-certification-activity-7257791548724072448-tDJH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNlPZ8B7jmUE4A65gvtRnToLRPSuBWKwGI",
+    image: "https://placehold.co/100x100/2563eb/ffffff?text=SF"
+  },
+  {
+    id: 4,
+    title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+    issuer: "Oracle",
+    date: "2025",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E9B71DE354D567847C1831829928E0B9B26C01A8602CFD2ED34B007119A40B2C",
+    image: "https://placehold.co/100x100/2563eb/ffffff?text=OCI"
   }
 ];
