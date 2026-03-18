@@ -2,6 +2,13 @@ import { Github, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project }) => {
+    const getImageUrl = (path) => {
+        if (path.startsWith('/')) {
+            return `${import.meta.env.BASE_URL}${path.slice(1)}`;
+        }
+        return path;
+    };
+
     return (
         <motion.div
             whileHover={{ y: -10 }}
@@ -9,7 +16,7 @@ const ProjectCard = ({ project }) => {
         >
             <div className="h-48 overflow-hidden relative group">
                 <img
-                    src={project.image}
+                    src={getImageUrl(project.image)}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
